@@ -1,0 +1,4 @@
+curl https://raw.githubusercontent.com/khalifarsm/whatsappapi/master/whataapp.yml -o whatsappapi.yml
+curl https://raw.githubusercontent.com/khalifarsm/whatsappapi/master/db.env -o db.env
+sudo docker-compose -f whatsappapi.yml up -d
+sudo docker-compose -f whatsappapi.yml  ps
