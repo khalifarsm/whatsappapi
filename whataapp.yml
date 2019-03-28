@@ -21,7 +21,7 @@ services:
     image: docker.whatsapp.biz/web:v${WA_API_VERSION:-2.21.6}
     command: ["/opt/whatsapp/bin/wait_on_mysql.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
     ports:
-     - "443:443"
+     - "9090:443"
     volumes:
      - whatsappMedia:/usr/local/wamedia
     env_file:
